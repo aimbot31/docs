@@ -94,10 +94,9 @@ The first step to use OVH Queue is to create an application.
 
     ```
     ./kafka-client-$(uname -s)-amd64 produce --brokers $HOST:9093 --username $SASL_USERNAME --password $SASL_PASSWORD --topic $TOPIC
-    # Then write to STDIN to send a message
     ```
 
-    Example with the application created above:
+Then write to STDIN to send a message. Example with the application created above:
 
     ```
     ./kafka-client-Linux-amd64 produce --brokers kafka.p1.sbg.queue.ovh.net:9093 --username my-app.admin --password aRT3u7R2TuRzhMmnLl --topic my-app.my-topic
